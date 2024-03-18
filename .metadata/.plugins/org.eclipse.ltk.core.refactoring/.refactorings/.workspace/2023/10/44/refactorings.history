@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HospitalBookKepingInformationSystem&apos; to &apos;HBKIS&apos;" description="Rename resource &apos;HospitalBookKepingInformationSystem&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/HospitalBookKepingInformationSystem" name="HBKIS" stamp="1698682008775" updateReferences="true"/>
+</session>

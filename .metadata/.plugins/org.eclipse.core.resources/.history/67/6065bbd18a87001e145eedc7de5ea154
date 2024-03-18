@@ -1,0 +1,37 @@
+package servlet;
+
+import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.*;
+import db.Clinic;
+import db.User;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+@WebServlet("/login")
+public class LoginServlet extends HttpServlet {
+
+    private static final long serialVersionUID = 1L;
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("application/json");
+        PrintWriter out = response.getWriter();
+
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+
+        if (password != null) {
+            Clinic clinic = new Clinic();
+            User user = clinic.login(username, password); // Assuming login method returns User object
+            if (user != null) {
+                out.write(user.toJSONObject().toString());
+            } else {
+                out.write(new JSONObject().put("status", "failed").toString());
+            }
+        } else {
+            out.write(new JSONObject().put("status", "invalid request").toString());
+        }
+    }
+}

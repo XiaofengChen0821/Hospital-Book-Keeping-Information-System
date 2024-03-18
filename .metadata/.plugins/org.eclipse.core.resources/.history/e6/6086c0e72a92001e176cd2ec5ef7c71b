@@ -1,0 +1,51 @@
+package db;
+
+public class ClinicTest {
+
+    public static void main(String[] args) {
+        Clinic clinic = new Clinic();
+
+        // Test: Get all lab tests for a patient
+        System.out.println("All lab tests for patient 'Laura Wickerson':");
+        clinic.getPatientsAllLabTests("Laura Wickerson").forEach(System.out::println);
+
+        // Test: Get particular lab tests for a patient
+        System.out.println("\nHemoglobin lab tests for patient 'Laura Wickerson':");
+        clinic.getPatientsParticularLabTests("Laura Wickerson", "Hemoglobin").forEach(System.out::println);
+
+        // Test: Get one particular lab test record for a patient
+        System.out.println("\nLab test on '2023-01-18' for patient 'Laura Wickerson':");
+        System.out.println(clinic.getOneParticularLabTest("Laura Wickerson", java.time.LocalDate.parse("2023-01-18"), "Hemoglobin"));
+
+        // Test: Get visitation record of a patient on a specified date/time
+        System.out.println("\nVisitation record on '2023-06-21' for patient 'Jocob Brinstone':");
+        System.out.println(clinic.getVisitationRecord("Jocob Brinstone", java.time.LocalDate.parse("2023-06-21")));
+
+        // Test: Get Physician(s) of a patient
+        System.out.println("\nPhysicians of patient 'Laura Wickerson':");
+        clinic.getPhysiciansOfPatient("Laura Wickerson").forEach(System.out::println);
+
+        // Test: Get Patient(s) of a physician
+        System.out.println("\nPatients of physician 'Dr. John Smith':");
+        clinic.getPatientsOfPhysician("John Smith").forEach(System.out::println);
+        
+        // Test login operation
+//        System.out.println("\nLogin test for physician 'Dr. John Smith':");
+//        boolean isLoggedIn = clinic.login("DrJohnSmith", "password123");
+//        if (isLoggedIn) {
+//            System.out.println("Login successful for user: DrJohnSmith");
+//            // User is authenticated, proceed with session
+//        } else {
+//            System.out.println("Login failed for user: DrJohnSmith");
+//        }
+        
+        // Test: Get physicians of a nurse by nurse name
+        System.out.println("\nPhysicians of nurse 'Nurse Mary Johnson':");
+        clinic.getPhysiciansOfNurse("Mary Johnson").forEach(System.out::println);
+
+        // Test: Get nurses of a physician by physician name
+        System.out.println("\nNurses of physician 'Dr. John Smith':");
+        clinic.getNursesOfPhysician("John Smith").forEach(System.out::println);
+    }
+}
+
