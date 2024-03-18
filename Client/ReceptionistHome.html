@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptionist Home</title>
+    <link rel="stylesheet" href="./style/user.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Receptionist Home</h1>
+        <div class="user-info">
+            <span id="welcome">Welcome, Receptionist</span>
+            <button id="logout" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div class="search-panel">
+        <label for="physicianDropdown">Physician Name:</label>
+        <select id="physicianDropdown">
+            <option value="">Select Physician</option>
+            <option value="John Smith">Dr. John Smith</option>
+            <option value="Emily Jones">Dr. Emily Jones</option>
+        </select>
+        <button id="searchNurses">Search Nurses</button>
+    </div>
+
+    <div class="search-panel">
+        <label for="nurseDropdown">Nurse Name:</label>
+        <select id="nurseDropdown">
+            <option value="">Select Nurse</option>
+            <option value="Mary Johnson">Mary Johnson</option>
+            <option value="Anna Williams">Anna Williams</option>
+        </select>
+        <button id="searchPhysicians">Search Physicians</button>
+    </div>
+
+    <div class="result-container">
+        <!-- Results will be displayed here -->
+    </div>
+
+    <script src="./script/receptionistHome.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #28a745; /* Green color */
+    color: white;
+    padding: 10px 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.8em; /* Slightly larger font for the title */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+#logout {
+    background-color: #1e7e34; /* Darker green */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+#logout:hover {
+    background-color: #16682b; /* Even darker green for hover */
+}
+
+.common-panel, .labtest-search-panel, .visitation-search-panel {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.common-panel label, 
+.labtest-search-panel label, 
+.visitation-search-panel label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.common-panel select, .labtest-search-panel select, 
+.visitation-search-panel input[type="date"], 
+.labtest-search-panel input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 0.9em;
+}
+
+.common-panel button, .labtest-search-panel button, 
+.visitation-search-panel button {
+    background-color: #28a745; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+    width: 100%; /* Full width */
+}
+
+.common-panel button:hover, .labtest-search-panel button:hover, 
+.visitation-search-panel button:hover {
+    background-color: #1e7e34; /* Darker green for hover */
+}
+
+.result-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Table Styles for Results */
+.result-container table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.result-container th, 
+.result-container td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd; /* Adding left border */
+}
+
+.result-container th:first-child, 
+.result-container td:first-child {
+    border-left: none;
+}
+
+.result-container th {
+    background-color: #e9ecef;
+    border-top: 1px solid #ddd;
+}
+
+/* Search Panel Styles */
+.search-panel {
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-panel label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.search-panel select, 
+.search-panel button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 0.9em;
+}
+
+.search-panel button {
+    background-color: #28a745; /* Green background */
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+.search-panel button:hover {
+    background-color: #1e7e34; /* Darker green for hover */
+}
+
+/* Result Container Styles */
+.result-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}

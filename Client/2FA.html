@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Factor Authentication Page</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="login-container">
+        <h2>2 Factor Authentication</h2>
+        <form id="2FAForm">
+            <!-- <label for="2FAusername">Username:</label>
+            <input type="text" id="2FAusername" name="2FAusername">
+            <br> -->
+            <label for="2FAID">ID:</label>
+            <input type="text" id="2FAID" name="2FAID">
+            <br>
+            <input type="button" value="Login" onclick="SecFAlogin()">
+        </form>
+
+        <div id="status"></div>
+    </div>
+    <script src="./script/main.js"></script>
+</body>
+</html>

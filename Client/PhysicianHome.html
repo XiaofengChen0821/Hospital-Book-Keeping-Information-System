@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physician Home</title>
+    <link rel="stylesheet" href="./style/user.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Physician Home</h1>
+        <div class="user-info">
+            <span id="welcome">Welcome</span>
+            <button id="logout" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div class="common-panel">
+        <label for="patientDropdown">Patient Name:</label>
+        <select id="patientDropdown">
+            <option value="">Select Patient</option>
+            <!-- Patient names will be populated here -->
+        </select>
+    </div>
+
+    <div class="labtest-search-panel">
+        <label for="labTestDropdown">Lab Test:</label>
+        <select id="labTestDropdown">
+            <option value="">All</option>
+            <option value="Hemoglobin">Hemoglobin</option>
+            <option value="Calcium">Calcium</option>
+            <option value="Ferritin">Ferritin</option>
+        </select>
+
+        <label for="dateInput">Date:</label>
+        <input type="date" id="dateInput" value="">
+
+        <button id="labtest-search">Get Lab Test</button>
+    </div>
+
+    <div class="visitation-search-panel">
+        <label for="visit-dateInput">Visit Date:</label>
+        <input type="date" id="visit-dateInput" value="">
+
+        <button id="visitation-search">Get Visitation Record</button>
+    </div>
+
+    <div class="result-container">
+        <!-- Results will be displayed here -->
+    </div>
+
+    <script src="./script/physicianHome.js"></script>
+</body>
+</html>
