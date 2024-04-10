@@ -1,7 +1,5 @@
-INDEX VERSION 1.4+/Users/xiaofengchen/Library/CloudStorage/OneDrive-Personal/Fall 2023/CS7392 Web Develpment/Term Project/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-1608714326.index
-3862834071.index
-508171370.index
-720324850.index
-2705990087.index
-2981102429.index
+INDEX VERSION 1.4+/Users/xiaofengchen/Library/CloudStorage/OneDrive-Personal/SMU/Fall 2023/CS7392 Web Develpment/Hospital Book Keeping Information System/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3886402701.index
+1019792690.index
+1398311918.index
+1547238176.index

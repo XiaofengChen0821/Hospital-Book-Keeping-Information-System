@@ -2,5 +2,28 @@
 <libraryInfos>
     <libraryInfo home="/Users/xiaofengchen/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.aarch64_21.0.0.v20231013-1207/jre" version="21"/>
     <libraryInfo home="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home" version="21"/>
+    <libraryInfo home="/Users/xiaofengchen/Library/Java/JavaVirtualMachines/corretto-1.8.0_402/Contents/Home" version="1.8.0_402">
+        <bootpath>
+            <entry path="/Users/xiaofengchen/Library/Java/JavaVirtualMachines/corretto-1.8.0_402/Contents/Home/jre/lib/resources.jar"/>
+            <entry path="/Users/xiaofengchen/Library/Java/JavaVirtualMachines/corretto-1.8.0_402/Contents/Home/jre/lib/rt.jar"/>
+            <entry path="/Users/xiaofengchen/Library/Java/JavaVirtualMachines/corretto-1.8.0_402/Contents/Home/jre/lib/sunrsasign.jar"/>
+            <entry path="/Users/xiaofengchen/Library/Java/JavaVirtualMachines/corretto-1.8.0_402/Contents/Home/jre/lib/jsse.jar"/>
+            <entry path="/Users/xiaofengchen/Library/Java/JavaVirtualMachines/corretto-1.8.0_402/Contents/Home/jre/lib/jce.jar"/>
+            <entry path="/Users/xiaofengchen/Library/Java/JavaVirtualMachines/corretto-1.8.0_402/Contents/Home/jre/lib/charsets.jar"/>
+            <entry path="/Users/xiaofengchen/Library/Java/JavaVirtualMachines/corretto-1.8.0_402/Contents/Home/jre/lib/jfr.jar"/>
+            <entry path="/Users/xiaofengchen/Library/Java/JavaVirtualMachines/corretto-1.8.0_402/Contents/Home/jre/classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="/Users/xiaofengchen/Library/Java/Extensions"/>
+            <entry path="/Users/xiaofengchen/Library/Java/JavaVirtualMachines/corretto-1.8.0_402/Contents/Home/jre/lib/ext"/>
+            <entry path="/Library/Java/Extensions"/>
+            <entry path="/Network/Library/Java/Extensions"/>
+            <entry path="/System/Library/Java/Extensions"/>
+            <entry path="/usr/lib/java"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="/Users/xiaofengchen/Library/Java/JavaVirtualMachines/corretto-1.8.0_402/Contents/Home/jre/lib/endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
     <libraryInfo home="/Users/xiaofengchen/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.aarch64_21.0.0.v20231013-1207" version="21"/>
 </libraryInfos>
